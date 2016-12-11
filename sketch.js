@@ -23,11 +23,9 @@ function draw() {
     // Corpo testo in relazione all'altezza della finestra
     textSize(height/20);
     textAlign(CENTER);
-    textFont('Trirong');
-    text(hour(), width/2, height/3);
     textFont('Arvo');
+    text(hour(), width/2, height/3);
     text(minute(), width/2, height/3*1.5);
-    textFont('Work Sans')
     text(second(), width/2, height/3*2);
     
     pop();
@@ -42,11 +40,13 @@ function deviceTurned() {
     
     background(hour()*21, minute()*4, second()*4);
 
-    push();
+    
+    
+    /*push();
     
     noStroke();
     fill(255);
-    rotate(HALF_PI)
+    rotate(HALF_PI);
     rectMode(CENTER);
     rect(width/2,height/2-20,height/8,height/2)
 
@@ -64,5 +64,5 @@ function deviceTurned() {
     textFont('Work Sans')
     text(second(), width/2, height/3*2);
     
-    pop();
+    pop();*/
 }
