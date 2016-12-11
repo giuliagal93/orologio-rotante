@@ -44,9 +44,9 @@ function draw() {
   
     translate(width/2,height/3);
     
-    if (state == true) { rotate(-90) }
+    if (state == false) { rotate(-90) }
     
-    if (state == false) { translate(0,100)}
+    if (state == true) { translate(0,100)}
 
     // Corpo testo in relazione all'altezza della finestra
     textSize(height/20);
