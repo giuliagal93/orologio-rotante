@@ -45,9 +45,12 @@ function draw() {
     translate(width/2,height/3);
     
     if (state == false) { rotate(-90) 
-                        translate(-200,0)}
+                        translate(-200,0)
+                        }
     
-
+    if (state == true) {
+        translate(0,100)
+    }
     // Corpo testo in relazione all'altezza della finestra
     textSize(height/20);
     textAlign(CENTER);
