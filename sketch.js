@@ -2,7 +2,6 @@ value = 0;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    angleMode(DEGREES);
 
     
 }
@@ -47,6 +46,7 @@ function deviceTurned() {
     
     noStroke();
     fill(255);
+    rotate(HALF_PI)
     rectMode(CENTER);
     rect(width/2,height/2-20,height/8,height/2)
 
