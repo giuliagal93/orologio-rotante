@@ -6,6 +6,8 @@ function setup() {
     
 }
 
+value = 90;
+
 function draw() {
     background(hour()*21, minute()*4, second()*4);
     
@@ -17,7 +19,7 @@ function draw() {
     rectMode(CENTER);
     rect(width/2,height/2-20,height/8,height/2)
 
-    fill(90);
+    fill(value);
 
     translate(0,-1*height/100);
     // Corpo testo in relazione all'altezza della finestra
@@ -38,11 +40,18 @@ function draw() {
 
 function deviceTurned() {
     
+    if (value == 90) {
+        value = 240
+    } else if (value == 240) {
+        value = 90;
+    }
+    
+    
+    /*
+    
     background(hour()*21, minute()*4, second()*4);
-
+    push();
     
-    
-    /*push();
     
     noStroke();
     fill(255);
