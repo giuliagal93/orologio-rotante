@@ -49,7 +49,7 @@ function draw() {
                         }
     
     if (state == true) {
-        translate(0,100)
+        translate(0,150)
     }
     // Corpo testo in relazione all'altezza della finestra
     textSize(height/20);
