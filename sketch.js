@@ -45,7 +45,7 @@ function draw() {
     translate(width/2,height/3);
     
     if (state == false) { rotate(90) 
-                        translate(200,0)
+                        translate(400,0)
                         }
     
     if (state == true) {
