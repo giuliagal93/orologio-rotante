@@ -55,9 +55,9 @@ function draw() {
     textSize(height/20);
     textAlign(CENTER);
     textFont('Arvo');
-    text(hour(), 0, -1*height/10);
+    text(hour(), 0, -1*height/9);
     text(minute(), 0, height*0);
-    text(second(), 0, height/10);
+    text(second(), 0, height/9);
     
     
     
